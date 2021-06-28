@@ -15,4 +15,4 @@ The  code you’ll be developing here is what’s called “back-end” code, in
 * Implement Graphs in Java from scratch.
 * Implement basic graph search algorithms including breadth first search, Dijkstra's Algorithm, and A* Search.
 * Evaluate the performance of different graph search algorithms in different contexts.
-* Work with real-world geographic road data
+* Work with real-world geographic road data.

@@ -5,6 +5,12 @@ Mapping applications such as Google Maps have changed the way millions of people
  
 ---  
 
+<img src= "graph search01.png" width = "600">
+
+---
+
+<img src= "graph search02.png" width = "600">
+
 ## Code design
 The  code you’ll be developing here is what’s called “back-end” code, in that  you’ll be working with road data, but not directly with the front-end interface.  Separating the back-end functionality from the front end interface is a very common software engineering practice, and in this class the ideas we're learning fit firmly into this back-end functionality.  But just developing back-end code can be dry, so we provide you with a front end map interface that uses the Google Maps API.  This interface may look like Google Maps, but it needs your code to work!   By the end of the course, you'll have built something that really looks and feels like Google Maps!   Admittedly, it will be quite primitive compared to the real Google Maps, but hey, you're just one person coding for one month (and part-time, at that).  The real Google Maps took months or years to develop with a team of many professional engineers. 
 

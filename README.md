@@ -1,6 +1,6 @@
 # Java-GraphSearchGoogle
 
-The project is to build a mapping application with the ability to provide and visualize routes from one point to another in a map.
+The project is to build a mapping application with the ability to provide and visualize routes from one point to another in a map utilizing Google Maps API.
 Mapping applications such as Google Maps have changed the way millions of people live.  For many people, the last time they had to "give someone directions" to their home or office was years ago!  But how do these technologies work?  At their heart is a data structure called a graph.  Once you understand and can implement graphs and graph algorithms, you can implement a huge part of the core functionality of these sophisticated mapping applications!  
  
 ---  

@@ -145,8 +145,7 @@ public class MapGraph {
 	 * @return The list of intersections that form the shortest (unweighted)
 	 *   path from start to goal (including both start and goal).
 	 */
-	public List<GeographicPoint> bfs(GeographicPoint start, 
-			 					     GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
+	public List<GeographicPoint> bfs(GeographicPoint start, GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
 	{
 		// TODO: Implement this method in WEEK 3
 		// the data structure used in bfs is queue
@@ -207,7 +206,7 @@ public class MapGraph {
        return path;
    }
 	
-   private double maxSpeedLimit(double X, double Y){
+   /* private double maxSpeedLimit(double X, double Y){
        try{
 
            String out = new Scanner(new URL("https://overpass-api.de/api/interpreter?data=[out:json];way[highway](around:333,"+X+","+Y+");out;").openStream(), "UTF-8").useDelimiter("\\A").next();
@@ -221,7 +220,7 @@ public class MapGraph {
        }catch (Exception e) {
            System.out.println(e);
        }return 55;
-   }
+   } */
 
 	/** Find the path from start to goal using Dijkstra's algorithm
 	 * 
@@ -245,8 +244,7 @@ public class MapGraph {
 	 * @return The list of intersections that form the shortest path from 
 	 *   start to goal (including both start and goal).
 	 */
-	public List<GeographicPoint> dijkstra(GeographicPoint start, 
-										  GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
+	public List<GeographicPoint> dijkstra(GeographicPoint start, GeographicPoint goal, Consumer<GeographicPoint> nodeSearched)
 	{
 		// TODO: Implement this method in WEEK 4
 		//A set is a collection of keys which cannot repeat itself
@@ -279,7 +277,7 @@ public class MapGraph {
                         //                   " | Time: " + (node.getLength()/maxSpeedLimit(node.getValue().getX(), node.getValue().getY())));
 		
                 		
-                		distances.put(node.getValue(), (node.getLength()/maxSpeedLimit(node.getValue().getX(), node.getValue().getY())) + distances.get(curr.getValue()));
+                	distances.put(node.getValue(), (node.getLength() + distances.get(curr.getValue()));
                         parentMap.put(node.getValue(), curr.getValue());
                         toExplore.add(node);
 
